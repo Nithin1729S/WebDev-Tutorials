@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Bubbling</title>
+    <style>
+        .hide{
+            display:none;
+        }
+    </style>
+
+</head>
+<body>
+    <p onclick="alert('Paragraph Clicked')">
+        This is a paragraph
+        <button onclick="alert('Button Clicked')">Click Me</button>
+    </p>
+
+    <div id="container">
+        Click to Hide
+        <button id="btn">Change Color</button>
+    </div>
+
+<script src="test.js"></script>
+</body>
+</html>
