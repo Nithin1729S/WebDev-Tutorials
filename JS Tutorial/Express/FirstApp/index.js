@@ -1,59 +1,46 @@
 const express=require("express")
-const app=express();
-
-// app.use((req,res)=>{
-//     console.log("We got a new request")
-//    //res.send("Hello we got your response!!!")
-//    //res.send({color:"red"})
-//    res.send('<h1>THis is mine</h1>')
+const app=express()
+// app.use(()=>{
+//     console.log("We got a request")
 // })
-
+app.listen(3000,()=>{
+    console.log("Listening on port 3000")
+})
 
 app.get('/',(req,res)=>{
-    res.send("This is the homepage")
+    res.send('<h1>Home</h1>')
 })
 
 app.get('/r/:subreddit',(req,res)=>{
     const {subreddit}=req.params
-    res.send(`<h1>Browsing the ${subreddit} subreddit</h1>`)
+    res.send(`<h1>This is ${subreddit} subreddit</h1>`)
 })
 
 app.get('/r/:subreddit/:postId',(req,res)=>{
     const {subreddit,postId}=req.params
-    res.send(`<h1>Viewing Post ID ${postId} on the subreddit ${subreddit}`)
+    res.send(`<h1>This is Post ${postId} of ${subreddit} subreddit</h1>`)
 })
 
 app.get('/search',(req,res)=>{
-    //console.log(req.query)
+    console.log(req.query)
     const {q}=req.query;
     if(!q)
     {
-        res.send("Bruh!!Nothing found if nothing searched")
+        res.send('<h1>No matching results</h1>')
     }
-    res.send(`<h1>Search results for: ${q}</h1>`)
+
+    res.send(`<h1>Search Results for: ${q}</h1>`)
 })
 
 app.get('/cats',(req,res)=>{
-    //console.log("CAT REQUEST")
-    res.send("MEOW!!")
+    res.send('<h1>Meow</h1>')
 })
 
 app.get('/dogs',(req,res)=>{
-    //console.log("CAT REQUEST")
-    res.send("WOOF!!")
-})
-
-app.post('/cats',(req,res)=>
-{
-    res.send("This is a post request to /cats different from get request")
+    res.send('<h1>Bark</h1>')
 })
 
 
-app.get('*',(req,res)=>{
-    res.send("I dont know that path")
-})
-
-app.listen(3000,()=>{
-    console.log("LISTENING ON PORT 3000")
-})
-
+// app.use((req,res)=>{
+//     res.send({color:"red"})
+// })
