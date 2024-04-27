@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        p {
+            border: 2px solid red;
+            /*Element Selector*/
+
+
+        }
+
+        /* Puts a border to all the paragraphs */
+
+        .redElement {
+            color: red;
+            /*Class Selector*/
+
+        }
+
+        .bgBlue {
+            background-color: aqua;
+        }
+
+        #firstpara {
+            color: brown;
+
+
+
+        }
+
+        #secondpara {
+            color: aquamarine;
+        }
+
+        /*ID Selector*/
+
+        footer,
+        span {
+            background-color: blueviolet;
+        }
+
+        /*CSS Grouping selector*/
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstpara">This is a simple paragraph to demonstrate CSS selectors</p>
+    <p id="secondPara" class="redElement bgBlue">This is a simple paragraph to demonstrate CSS selectors</p>
+    <div class="redElement bgBlue">
+        <p>This is a simple paragraph inside div to demonstrate CSS selectors</p>
+    </div>
+    <span>this is span</span>
+    <p class="redElement bgBlue">LOLXD</p>
+    <footer>This is footer</footer>
+</body>
+<!-- Background clor tag can be invoked by just writing bcol ot bgcol or something like that -->
+
+</html>
+<!-- Use ID selector when you want to select only one particular element
+      Use Class selector when you want a lot of elements to have a same style
+    Multiple Elements can have the same class and one element can have multiple classes
+     But id is unique to a particular element and no other element can have the same id(identifier) -->

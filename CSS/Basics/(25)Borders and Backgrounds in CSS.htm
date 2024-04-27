@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,Width,Borders and Backgrounds</title>
+    <style>
+        #firstPara {
+            background-color: red;
+            height: 100px;
+            /*Height of background color*/
+            width: 455px;
+            /*Width of the bg color*/
+            border-style: solid;
+            /*Gives border */
+            border-color: greenyellow;
+            border-width: 4px;
+            /* All the three lines above can be written in one line as */
+            border: 4px solid greenyellow;
+
+            border-radius: 69px;
+            /*Curves the border*/
+
+
+        }
+
+        #secondPara {
+            background-color: rgb(44, 138, 229);
+            height: 68px;
+            width: 466px;
+            /*  You can particularly target a side or corner like this*/
+            border-top: 22px solid black;
+            border-left: 10px solid green;
+            border-top-left-radius: 40px;
+        }
+
+        #thirdPara {
+            height: 658px;
+            width: 946px;
+            background-image: url('https://thumbs.dreamstime.com/b/oak-tree-7507678.jpg');
+            /* This background image keeps repeating itself */
+            border: 2px solid red;
+            /* background-repeat: x;  This will make the bgimage repeat only in x axis    */
+            /* background-repeat: y;  This will make the bgimage repeat only in y axis */
+            background-repeat: no-repeat;
+            /* background-position:  center center;     Comes at absolute center
+            background-position:  center right;        Comes at right center
+            background-position:  12px top;        At the top 12px (In x axis)from the side
+            background-position: 12px 20px;   These  are like the coordinates for the image inside the border*/
+            /* top left,bottom right ,center top,center left, xy coordinates etc */
+
+            background-position: center center;
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is heading</h3>
+    <p id="firstPara">This is a Paragraph</p>
+    <p id="secondPara">This is my second Paragraph</p>
+    <p id="thirdPara">This is my third Paragraph</p>
+
+</body>
+
+</html>

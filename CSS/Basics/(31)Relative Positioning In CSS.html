@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*CSS Positions are of some types like Static(Default),Absolute,Relative,fixed,sticky */
+
+        .box{
+            display: inline-block;    /*To take the boxes in the same line*/
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+
+
+
+        }
+/* If you set position as relative you can use top,bottom,left,right properties.The box will move 34px from the top relative to  its normal position, if you use top:34px .
+But this create a vacancy in the old place to avoid that you can use absolute */
+        
+
+        #box3{
+            position:relative;
+            top: 34px;
+            left: 34px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</body>
+</html>

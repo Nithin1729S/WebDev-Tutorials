@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            /*This applies to all elements in the body*/
+            font-family: 'Ubuntu', sans-serif;
+
+
+
+
+
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: aliceblue;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;
+            /*auto brings it at the center*/
+            background-color: rgb(225, 252, 223);
+
+        }
+
+        /* Float would make element go to that side outside the parent container */
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: left;
+            clear: right;
+            clear: both;
+            width: 100%;
+        }
+
+        /*  If i didnt write float in any one of the elements then the float element will overlap on the non float ones ,to avoid this use clear property which tells the float element to not disturb the non float elements*/
+
+        p,
+        h1 {
+            text-align: right;
+            /*Changes allignment of text(This was overrided)*/
+            text-align: left;
+            /*Changes allignment of text(This was overrided)*/
+            text-align: center;
+            text-align: justify;
+
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: 569px;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi laborum,
+                tempore magnam nam similique nulla incidunt quo odio, reprehenderit omnis quaerat, cumque enim quibusdam
+                nisi quia! Temporibus vero laboriosam fugit facere fuga deserunt, ipsam aliquid doloribus. Architecto
+                placeat assumenda exercitationem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut et
+                nihil cupiditate commodi, molestias provident in nesciunt consequuntur, tenetur earum dolor minus
+                accusantium odit nemo tempore atque sint omnis illo hic non debitis quaerat. Autem expedita dicta itaque
+                explicabo?</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+                laborum, tempore magnam nam similique nulla incidunt quo odio, reprehenderit omnis quaerat, cumque enim
+                quibusdam nisi quia! Temporibus vero laboriosam fugit facere fuga deserunt, ipsam aliquid doloribus.
+                Architecto placeat assumenda exercitationem. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Optio dolor iure ipsam in vero quam, sapiente, voluptates temporibus dolores nihil eaque quos. Aut,
+                labore aliquam voluptate provident sunt consectetur quaerat dicta necessitatibus qui eligendi magni?
+                Architecto minus ipsum repellat at.</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+                laborum, tempore magnam nam similique nulla incidunt quo odio, reprehenderit omnis quaerat, cumque enim
+                quibusdam nisi quia! Temporibus vero laboriosam fugit facere fuga deserunt, ipsam aliquid doloribus.
+                Architecto placeat assumenda exercitationem.</p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi laborum,
+                tempore magnam nam similique nulla incidunt quo odio, reprehenderit omnis quaerat, cumque enim quibusdam
+                nisi quia! Temporibus vero laboriosam fugit facere fuga deserunt, ipsam aliquid doloribus. Architecto
+                placeat assumenda exercitationem.</p>
+        </div>
+    </div>
+</body>
+
+</html>

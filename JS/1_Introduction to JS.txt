@@ -1,0 +1,9 @@
+*JS is a high level language,object oriented , multiparadigm programmning language
+*Highlevel language means that we dont need to worry about complex stuff like memory management
+*Used a lot in web development,to web application .Gives dynamic effects .
+JS is like the verb of webdevelopment
+Example:Spinning loading sign before data is loaded
+
+There is nothing you cant do with JS
+ES6 is the biggest updaate to the language ever.ES is ecma script  
+

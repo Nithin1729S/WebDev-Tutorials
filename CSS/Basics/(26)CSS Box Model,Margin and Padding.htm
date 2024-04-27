@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box model</title>
+    <style>
+        * {
+            /*Universal CSS Selector. Applies to all elements untill someone overrides it */
+
+            box-sizing: border-box;
+        }
+         
+        body{background-color: rgb(229, 173, 189);}          /*Body Selector in CSS*/
+
+
+
+
+
+
+        .container {
+            background-color: antiquewhite;
+            border: 3px solid rgb(72, 17, 209);
+            /* padding: 90px; */
+            /*Content gets inside*/
+            /* We can set top,bottom,left,right padding like this */
+            /* padding-top:45px;
+               padding-bottom:43px;
+               padding-left:56px 
+               padding-right:65px ;  */
+
+            /* padding: 23px 56px 6px 78px;      top right bottom left trbl*/
+
+            /* padding: y(top/bottom) x(left/right); */
+
+            padding: 14px 19px;
+
+
+            /*Even margin can be done like above*/
+
+            margin: 34px 19px;
+            /*Separates the elements*/
+            /* Go to the website and inspect and go to the place in the bottom right where the padding details are available and click the px and use arrow keys to increase or decrease the number and see which looks best */
+
+            border-radius: 23px;
+            width: 967px;
+            /* Width includes margin ,padding also.So if you keep this width same abd increase the padding in x the width will increase.If you wanna prevent this you can use a property called box sizing */
+
+            box-sizing: border-box;
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci possimus provident aliquam
+            consectetur, nobis veniam laudantium dolorum non minima omnis quos excepturi, fugiat, officia dicta aut
+            magnam optio quibusdam! Quis, magnam? Dolorum explicabo excepturi quidem blanditiis recusandae, reiciendis
+            soluta sapiente.
+            <hr>
+            <strong>A venn diagram about all this can be found here:</strong><br>
+            <center><img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png"
+                    alt="https://img.webnots.com/2016/03/CSS-Box-Model-1.png" height="334px" width="345px"></center>
+        </p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci possimus provident aliquam
+            consectetur, nobis veniam laudantium dolorum non minima omnis quos excepturi, fugiat, officia dicta aut
+            magnam optio quibusdam! Quis, magnam? Dolorum explicabo excepturi quidem blanditiis recusandae, reiciendis
+            soluta sapiente.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci possimus provident aliquam
+            consectetur, nobis veniam laudantium dolorum non minima omnis quos excepturi, fugiat, officia dicta aut
+            magnam optio quibusdam! Quis, magnam? Dolorum explicabo excepturi quidem blanditiis recusandae, reiciendis
+            soluta sapiente.</p>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and more designing</title>
+    <style>
+        a {
+            text-decoration: none;
+            /*This removes the underline from hyperlink*/
+            color: black;
+        }
+
+        /* hover,active,visited are all pseudo selectors */
+        a:hover {
+            /*What happens to a , when the cursor hovers over a */
+            color: rgb(24, 13, 177);
+            background-color: rgb(102, 227, 243);
+        }
+
+        a:visited {
+            /* Once the link is opened it changes */
+            background-color: yellow;
+
+        }
+
+        a:active {
+            /* The instant you click it it gets darkblue */
+            background-color: darkblue;
+        }
+
+        .btn:hover {
+            background-color: blue;
+            border: 2px solid rgb(17, 190, 55);
+        }
+
+        /* .btn:visited{
+            background-color: #fff;
+
+        }
+
+        .btn:active{
+            background-color:beige
+        } */
+
+        .container {
+            border: 2px solid red;
+            background-color: aquamarine;
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+
+        }
+
+        .btn {
+            background-color: rgb(234, 71, 31);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            /*What the cursor becomes when it points this element*/
+            font-size: 13px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias veniam tempora, officiis vero
+            doloremque. Quos consequatur placeat delectus mollitia hic nostrum neque. Adipisci consequuntur eos minima
+            cum voluptates iure! Ea incidunt excepturi explicabo?</p>
+        <a href="https://google.com" class="btn">Read More</a>
+        <!--This is Hyperlink-->
+        <button class="btn">Contact Us</button>
+        <!--This is Button-->
+
+    </div>
+
+</body>
+<!-- Make sure you dont overide the style -->
+
+</html>

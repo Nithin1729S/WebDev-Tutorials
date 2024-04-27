@@ -1,0 +1,57 @@
+<!-- Java script is a client side scripting language .Used to add logic to webpage.Ex: By clicking the button the form gets submitted.
+It is used to make web pages alive.To change content in your web page without reload ie dynamically.
+It is used to programmatically perform actions within the page.
+It was initially called "Live Script".
+But java was very popular at that time ,so it was decided that positioning a language as a "Younger brother" of Java would help.
+To send data to the server .
+
+AJAX : Asynchronous Javascript And XML :
+    A evil website can make a xml http request(AJAX Request)  and ask data about fb.com and asks it to send.Then the website cana read your fb msgs.
+    Browser follows a "Same origin policy" acc to that fb declines that request and the evil website gets a error.
+    But if there is a agreement between the two websites that that is possible to get that data
+    
+
+
+
+
+
+
+
+DOM:Document Object Model- an object in JS.Your page will be available as DOM.
+DOM has html,css,etc in it.DOM=Page
+
+JS can execute not only in the  browser but also on the server
+We will use JS as a client as well as server side language
+JS haševolved greaatly as a language and is now used to perform wide variety of tasks
+
+
+
+It is important to make sure that JS safe .It should have no malicious permissions .Browser ensures this
+In Browser JS can :
+1) Add new HTML and change existing existing html from DOM
+2) React to events(Event is a action/response/keypress/mouse movement which a user performs  and that comes as a request to the browser) 
+3)AJAX requests
+4) Get and set cookies and use local storage
+
+In Browser JS cant :
+1) Read/write to and from computer hard disk
+2) yoursite.com with the help of JS can access all the websites which are permitted . But cannot access your computer.
+
+
+What makes JS unique :
+1) Integration  of HTML and CSS 
+2) Simple API (Application Program Interface)
+3) Major modern browser support . ie enabled by default
+
+
+JS Versions :
+1) Maintened by community ie standardised
+2)ECMA (ES) is a standard of scripting.It pushes new updates to JS JS keeps updating and new ECMA versions keeps getting released
+3)First version of ECMA at 1997.
+4)
+
+
+
+
+
+-->

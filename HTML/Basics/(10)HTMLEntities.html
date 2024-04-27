@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+<body>
+<div class="container">
+<p>This is a paragraph</p>
+</div>
+<div class="container">
+    <!-- Html chops of all the spaces and takes it as one space so we use &nbsp ie non breaking spaces -->
+<p>This is another    &nbsp;              paragraph</p>
+<p>This is another    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              paragraph</p>
+<!-- To keep <> symbols in the webpage use &lt; and &gt; example &lt;p&gt; will be shown in webpage as <p>-->
+<p>Paragraph is written like this &lt;p&gt;</p>
+<!-- HTML entities allows the reserved characters like <> to be used in webpage.
+Its also used to write symbols not present on the keyboard example pound symbol -->
+<p>Pound symbol which is not present on the keyboard can be written like this &pound;</p>
+<p>copywrite symbol which is not present on the keyboard can be written like this &copy;</p>
+<p>yen symbol which is not present on the keyboard can be written like this &yen;</p>
+<p>yen symbol which is not present on the keyboard can be written like this &#8203;</p>
+
+<p>You can more such entities here https://www.w3schools.com/charsets/ref_html_symbols.asp</p>
+
+</div>
+
+    
+</body>
+</html>

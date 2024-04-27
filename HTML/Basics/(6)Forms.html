@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>
+        This is form tutorial
+    </h2>
+    <!-- Div tag is a block element and takes a entire block and the other elements have to take another block .use this instead of br tag  
+ Input tag is a spanic inline element  -->
+    <form action="backend.php">
+        <div>
+            Name:<input type="text" name="myName">
+        </div><br>
+        <div>
+            Role:<input type="text" name="myRoll">
+        </div><br>
+        <div>
+            Email: <input type="email" name="myEmail" id="">
+            <!-- Name is that tag from which our backend recognizes this data -->
+        </div><br>
+
+
+        <div>
+            Date:<input type="date" name="" id="">
+        </div><br>
+
+        <div>
+            Bonus:<input type="number" name="myBonus" id="">
+        </div><br>
+        <div>
+            Are you eligible:<input type="checkbox" name="myEligibility" id="" checked>   <!--Checked is used to tick that box by default-->
+        </div><br>
+        <div>
+            Gender:Male<input type="radio" name="myGender" id=""> FeMale<input type="radio" name="myGender"
+                id="">Other<input type="radio" name="myGender" id="">
+            <!-- I can select only one option of these as all have the same name myGender -->
+        </div><br>
+
+
+        <div>
+            Write about yourself:<br><textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div><br>
+
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        
+        </div><br>
+
+    </form>
+
+</body>
+<!-- Select a text and press alt plus arrow keys to move that text around -->
+
+</html>

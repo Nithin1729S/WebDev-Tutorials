@@ -1,9 +1,10 @@
 h1{
-    color: blue;
+    color: rgb(255, 208, 0);
+    background-color: teal;
 }
 
 button
 {
     color:balck;
-    background: #000;
+    background-color: #000;
 }

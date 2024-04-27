@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header {
+            margin: auto;
+            /*This brings the element at the center of the container but since header is a block statement it doesnt go to center but it will go to center if width is set
+            This will create a preblem if header has a block element inside it ,first take care of it  */
+            border: 2px solid red;
+            /* Display inline makes a block element inline and it takes only the space required by it noy the whole block */
+            /* Display block allows us to set width and use margin auto to put it at the centers*/
+            width: 1200px;
+            /*Width can be set only to block elements*/
+
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 88px;
+
+        }
+
+        h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 26px;
+            margin: 0px;
+            text-align: center;
+
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: gray;
+            margin: 4px;
+            padding: 23px;
+            display: inline-block;
+            /*Keeps it inline and allows us to adjust width*/
+            width: 30%;
+            box-sizing: border-box;
+
+
+        }
+        .container{
+            margin: auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <!--Header is a block ekement and we can set width of a block element-->
+        <img src="https://www.codewithharry.com/img/logo-blue.png" alt="">
+        <h3>Welcome to Harry's blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quis deserunt at! Soluta et molestias
+                optio molestiae, a quod tempora voluptatum minima facere aperiam nisi sit quasi inventore sed unde natus
+                doloremque, maiores delectus, dicta saepe alias placeat. Debitis inventore dicta numquam voluptas quo.
+            </p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quis deserunt at! Soluta et molestias
+                optio molestiae, a quod tempora voluptatum minima facere aperiam nisi sit quasi inventore sed unde natus
+                doloremque, maiores delectus, dicta saepe alias placeat. Debitis inventore dicta numquam voluptas quo.
+            </p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quis deserunt at! Soluta et molestias
+                optio molestiae, a quod tempora voluptatum minima facere aperiam nisi sit quasi inventore sed unde natus
+                doloremque, maiores delectus, dicta saepe alias placeat. Debitis inventore dicta numquam voluptas quo.
+            </p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
